@@ -3,6 +3,7 @@
 
   // Alt menü (mobil)
   var toggle = document.querySelector('.nav-toggle');
+  var hasPuzzle = !!document.getElementById('board');
   var nav = document.getElementById('nav');
   toggle.addEventListener('click', function () {
     var open = nav.classList.toggle('open');
@@ -17,6 +18,7 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  if (hasPuzzle) {
   // Mat bulmacası: beyaz Re1-e8# oynar (arka sıra matı)
   var GLYPH = { K: '♚', Q: '♛', R: '♜', B: '♝', N: '♞', P: '♟' };
   var START = {
@@ -125,6 +127,9 @@
   document.getElementById('reset').addEventListener('click', reset);
   reset();
 
+  }
+
+  if (document.getElementById('signup-form')) {
   // Ön kayıt formu -> WhatsApp
   var form = document.getElementById('signup-form');
   var err = document.getElementById('form-error');
@@ -142,4 +147,5 @@
       d.get('program') + ' deneme dersi hakkında bilgi almak istiyorum. Şube: ' + d.get('sube') + '.';
     window.open('https://wa.me/905337771899?text=' + encodeURIComponent(text), '_blank', 'noopener');
   });
+  }
 })();

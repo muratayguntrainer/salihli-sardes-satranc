@@ -136,3 +136,14 @@ section{padding:clamp(48px,8vw,104px) var(--gutter)}
 .site-footer a{text-decoration:none}
 .site-footer a:hover{color:var(--orange)}
 .copy{width:100%;opacity:.65;font-size:.9rem}
+
+/* alt sayfalar */
+.page-hero{background:radial-gradient(circle at 80% 40%,var(--orange-light),var(--orange) 60%,var(--orange-deep));color:var(--navy);padding-block:clamp(36px,6vw,72px)}
+.page-hero h1{margin-bottom:.3em}
+.page-body{background:var(--cream);min-height:40vh}
+.nav a[aria-current="page"]:not(.nav-cta){color:var(--orange-deep);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}
+.staff-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,300px));gap:28px}
+.staff{background:var(--white);border:3px solid var(--ink);border-radius:var(--radius);padding:20px;box-shadow:8px 8px 0 var(--orange)}
+.staff img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:var(--cream);margin-bottom:16px}
+.staff h2{font-size:1.5rem;margin-bottom:.2em}
+.staff .role{font-weight:700;color:var(--orange-deep);margin-bottom:.6em}
