@@ -147,3 +147,6 @@ section{padding:clamp(48px,8vw,104px) var(--gutter)}
 .staff img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:var(--cream);margin-bottom:16px}
 .staff h2{font-size:1.5rem;margin-bottom:.2em}
 .staff .role{font-weight:700;color:var(--orange-deep);margin-bottom:.6em}
+.news-detail{max-width:760px}
+.news-detail img{width:100%;border-radius:var(--radius);border:3px solid var(--ink);margin-bottom:28px;background:var(--white)}
+.page-hero h1{max-width:20ch}
